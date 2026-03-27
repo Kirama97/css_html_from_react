@@ -4,6 +4,7 @@ import Accueil from './pages/Accueil'
 import Contacts from './pages/Contacts'
 import Projets from './pages/Projets'
 import NotFound from './pages/NotFound'
+import Detail from './pages/Detail'
 
 
 
@@ -17,6 +18,7 @@ function App() {
             { path:"/" , element: <Accueil/> },
             { path:"/contact" , element: <Contacts/> },
             { path:"/projets" , element: <Projets/> },
+            { path:"/projet/:id" , element: <Detail/> },
       ]
     },
     { path:"*" , element: <NotFound/> },

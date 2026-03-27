@@ -352,10 +352,92 @@ font-size: 14px;
   object-fit: cover;
 }
 
+/* ------------detail-------------- */
 
 
+.detail {
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
 
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+}
 
+/* Conteneur principal */
+.box_detail {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.image_container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.image_container img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.image_container img:hover {
+  transform: scale(1.05);
+}
+
+/* Infos */
+.info_container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.info_container h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #cbd5f5;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Liens */
+.links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #3b82f6;
+  border-radius: 8px;
+  color: white;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #2563eb;
+}
+
+/* Techno */
+.techno {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+}
 
 /* ------------------------contacts-------------------- */
 

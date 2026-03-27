@@ -1,10 +1,11 @@
 import React from 'react'
 import { projets_bd } from '../data/Projet_bd'
+import { NavLink } from 'react-router-dom'
 
 
 const Projets = () => {
     
-  console.log(projets_bd)
+  // console.log(projets_bd)
    
   return (
     <div className='projet'> 
@@ -13,7 +14,7 @@ const Projets = () => {
         <div className="mes_projet">
              {
               projets_bd.map((projet) => (
-                 <div className="un_projet">
+                 <NavLink to={`/projet/${projet.id}`} className="un_projet">
                      <img src={projet.image} alt="" srcset="" />
                      <div className="box_projet">
                         <p>{projet.nom}</p>
@@ -25,7 +26,7 @@ const Projets = () => {
                          }
                          </div>
                      </div>
-                 </div>
+                 </NavLink>
               ))
              }
         </div>
